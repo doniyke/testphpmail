@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Php Form</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+</head>
+<body class="container">
+
+
+    <!--Form with header-->
+    <div class="card mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card-body form">
+                    <!--Header-->
+                    <div class="formHeader mb-1">
+                        <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+                    </div>
+
+                    <br>
+
+                    <form action="contact.php" method="POST">
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <div class="md-form">
+                                        <input type="text" placeholder="Full Name" name="name" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <div class="md-form">
+                                        <input type="email" placeholder="Email" name="email" class="form-control" required>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <div class="md-form">
+                                        <input type="tel" placeholder="Phone Number" name="phone" class="form-control" required>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form">
+                                    <div class="md-form">
+                                        <input type="text" placeholder="Reason For Contact" name="reason" class="form-control" required>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" placeholder="Your Message" name="message" class="md-textarea form-control" required></textarea>
+                                    
+                                    <button type="submit" name="send" class="btn btn-lg" style="background-color: #000066; color: #fff">Send Message</button>
+                                </div>
+
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4" >
+                <div class="card-body contact text-center" style="background-color: #000066; color: #fff">
+                    <div class="container">
+                        <div class="mb-5">
+                            <h3>Contact information</h3>
+                        </div>
+                        <div class="text-left">
+                            <p> <i class="fa fa-map-marker pr-3"></i>Address</p>
+                            <p><i class="fa fa-phone pr-3"></i> 12345</p>
+                            <p><i class="fa fa-phone pr-3"></i>12345</p>
+                            <p><i class="fa fa-envelope pr-3"></i> sample@gmail.com</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <!--/Form with header-->
+</body>
+</html>
